@@ -11,15 +11,6 @@
     align-items: center;
     color: white;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-    /*.mySVG {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 341px;
-    }*/
-
     &_title {
       font-family: $sans;
       font-weight: 100;
@@ -29,17 +20,7 @@
       text-align: center;
       line-height: 42px;
     }
-    .link {
-      text-decoration: none;
-      background-color: $color;
-      margin-bottom: 67px;
+    .btn {
       padding: 13px 43px;
-      font-family: $mono;
-      font-size: 16px;
-      font-weight: 600;
-      color: $fontcolor;
-      letter-spacing: 0;
-      text-align: center;
-      line-height: 22px;
     }
   }

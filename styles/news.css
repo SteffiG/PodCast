@@ -17,14 +17,6 @@
   color: white;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-  /*.mySVG {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 341px;
-    }*/
 }
 
 .news_title {
@@ -37,17 +29,7 @@
   line-height: 42px;
 }
 
-.news .link {
-  text-decoration: none;
-  background-color: #00F3BB;
-  margin-bottom: 67px;
+.news .btn {
   padding: 13px 43px;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 16px;
-  font-weight: 600;
-  color: #060A24;
-  letter-spacing: 0;
-  text-align: center;
-  line-height: 22px;
 }
 /*# sourceMappingURL=news.css.map */

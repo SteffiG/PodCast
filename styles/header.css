@@ -1,124 +1,130 @@
 .header {
+  width: 100%;
   height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo_img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   padding: 10px 16px;
 }
 
-#menu {
-  height: 224px;
-  position: fixed;
+.menuToggle {
+  padding: 10px 16px;
   width: 100%;
-  top: 44px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-  background: #0000EC;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #FFFFFF;
+}
+
+.iconToggle {
+  width: 18px;
+  height: 12px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.iconToggle::after,
+.iconToggle::before,
+.iconToggle .line {
+  content: '';
+  border-radius: 3px;
+  display: block;
+  height: 2px;
+  margin: 3px 0;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background: #000000;
 }
 
 .menuInner {
   margin: 0;
   padding: 0;
   padding-top: 16px;
+  width: 100%;
+  height: 224px;
+  top: 44px;
+  left: -100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  list-style: none;
+  background: #0000EC;
+  -webkit-transition: left 250ms ease-in-out;
+  -webkit-transition: left .5s ease-in-out;
+  transition: left .5s ease-in-out;
 }
 
-.menuInner_list1, .menuInner_list, .menuInner_list4 {
-  list-style: none;
+.menuInner_list, .menuInner_lis1, .menuInner_list4 {
   margin: 0px 0 24px 16px;
-  height: 28px;
   font-size: 16px;
 }
 
 .menuInner_link {
-  color: white;
-  cursor: pointer;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
   text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
 }
 
-.menuToggle:checked ~ #menu {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.menuInner_link:hover {
+  color: #00F3BB;
+  text-decoration: line-through;
 }
 
-.menuToggle {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.menuInner_link:active {
+  color: rgba(6, 10, 36, 0.56);
+  text-decoration: line-through;
+}
+
+.checkbox:checked ~ .menuToggle > .iconToggle:before {
+  -webkit-transform: translateY(5px) rotate(135deg);
+          transform: translateY(5px) rotate(135deg);
+}
+
+.checkbox:checked ~ .menuToggle > .iconToggle:after {
+  -webkit-transform: translateY(-5px) rotate(-135deg);
+          transform: translateY(-5px) rotate(-135deg);
+}
+
+.checkbox:checked ~ .menuToggle > .iconToggle .line {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.checkbox {
   display: none;
 }
 
-.iconToggle {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  cursor: pointer;
-  z-index: 99;
-  top: 16px;
-  right: 19px;
-  height: 12px;
-  width: 18px;
-  margin: 0;
-}
-
-.spinner {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background-color: black;
-}
-
-.part-1, .part-3 {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  margin-top: 3px;
-}
-
-.part-2 {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  margin-top: 3px;
-}
-
-.menuToggle:checked ~ .iconToggle > .part-2 {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  opacity: 0;
-}
-
-.menuToggle:checked ~ .iconToggle > .part-1, .menuToggle:checked ~ .iconToggle > .part-3 {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  margin-top: 8px;
-}
-
-.menuToggle:checked ~ .iconToggle > .part-3 {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-  margin-top: -7px;
+.checkbox:checked ~ .menu > .menuInner {
+  left: 0;
 }
 /*# sourceMappingURL=header.css.map */

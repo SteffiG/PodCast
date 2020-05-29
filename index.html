@@ -12,25 +12,24 @@
         <picture class="logo">
             <img class="logo_img" src="./images/logo.svg" alt="logo">
         </picture>
-        <input type="checkbox" class="menuToggle" id="menuToggle">
-        <label for="menuToggle" class="iconToggle">
-            <!--Modificar menu(eliminar los divs)-->
-            <div class="spinner part-1"></div>
-            <div class="spinner part-2"></div>
-            <div class="spinner part-3"></div>
-        </label>
-        <nav id="menu">
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <div class="menuToggle"> 
+            <label class="iconToggle" for="checkbox">
+                <span class="line"></span>
+            </label>
+        </div>
+        <nav class="menu">
             <ul class="menuInner">
-                <li class="menuInner_list1"><a href="#episodes" class="menuInner_link">EPISODIOS</a></li>
-                <li class="menuInner_list"><a href="#come" class="menuInner_link">NOSOTROS</a></li>
-                <li class="menuInner_list"><a href="#guests" class="menuInner_link">ENTREVISTAS</a></li>
-                <li class="menuInner_list4"><a href="#themes" class="menuInner_link">TÓPICOS</a></li>
+                <li class="menuInner_list"> <a class="menuInner_link" href="#episodes">EPISODIOS</a></li>
+                <li class="menuInner_list"> <a class="menuInner_link" href="#come">NOSOTROS</a></li>
+                <li class="menuInner_list"> <a class="menuInner_link" href="#guests">ENTREVISTAS</a></li>
+                <li class="menuInner_list"> <a class="menuInner_link" href="#themes">TÓPICOS</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="home" class="container">
-            <h1 class="title">Hello <span class="decoration">world</span> pale blue dot.</h1>
+            <h1 class="title">Hello <span class="decoration">world</span> pale blue dot<span class="dot">.</span></h1>
             <p class="paragraph">
                 Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
             </p>
@@ -42,8 +41,8 @@
         <section class="oblique">
             <h6 class="oblique_name">oblique</h6>
             <div class="skewed"></div>
-            <section class="episodes">
-                <h2 id="episodes" class="name">Episodios</h2>            
+            <section id="episodes" class="episodes">
+                <h2 class="name">Episodios</h2>            
                 <div class="play">
                     <div class="player">
                         <iframe class="player-spotify" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>
@@ -60,9 +59,6 @@
                 </div>
             </section>
         </section>
-        <!--section class="tlf">
-            <img class="telephone" src="./images/phone.png" alt="Image: The Secret History of Women in Coding">
-        </!--section-->
         <section id="come" class="we">
             <img class="telephone" src="./images/phone.png" alt="Image: The Secret History of Women in Coding">
             <div class="we_div">
@@ -119,7 +115,7 @@
         </section>
         <section id="news" class="news">
             <h2 class="news_title">¿Querés las últimas novedades?</h2>
-            <a role="button" class="link" href="#episodes">ESCUCHÁ LOS EPISODIOS</a>
+            <a role="button" class="btn" href="#episodes">ESCUCHÁ LOS EPISODIOS</a>
         </section>
     </main>
     <footer class="author">
