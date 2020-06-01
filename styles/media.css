@@ -32,18 +32,19 @@
     background-color: white;
     font-family: "IBM Plex Mono", monospace;
     display: flex;
-    margin: 26px 100px 26px 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 26px 0 0 0;
   }
-  .menuInner_list1, .menuInner_list {
+  .menuInner_list {
     margin: 0 48px 0 0;
     display: inline;
   }
   .menuInner_list4 {
-    margin: 0;
+    margin: 0 100px 0 0;
     display: inline;
   }
   .menuInner_link {
+    line-height: 28px;
     color: #060A24;
   }
   .menuInner_link:hover {
@@ -79,6 +80,7 @@
     display: block;
     font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
+    font-weight: 300;
     color: #060A24;
     line-height: 24px;
     margin: 0;
@@ -263,18 +265,19 @@
     background-color: white;
     font-family: "IBM Plex Mono", monospace;
     display: flex;
-    margin: 26px 100px 26px 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 26px 0 0 0;
   }
-  .menuInner_list1, .menuInner_list {
+  .menuInner_list {
     margin: 0 48px 0 0;
     display: inline;
   }
   .menuInner_list4 {
-    margin: 0;
+    margin: 0 100px 0 0;
     display: inline;
   }
   .menuInner_link {
+    line-height: 28px;
     color: #060A24;
   }
   .menuInner_link:hover {
@@ -359,18 +362,19 @@
     background-color: white;
     font-family: "IBM Plex Mono", monospace;
     display: flex;
-    margin: 26px 100px 26px 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 26px 0 0 0;
   }
-  .menuInner_list1, .menuInner_list {
+  .menuInner_list {
     margin: 0 48px 0 0;
     display: inline;
   }
   .menuInner_list4 {
-    margin: 0;
+    margin: 0 100px 0 0;
     display: inline;
   }
   .menuInner_link {
+    line-height: 28px;
     color: #060A24;
   }
   .menuInner_link:hover {
@@ -441,9 +445,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  .we .telephone {
-    margin: 0;
   }
   .we_div {
     width: 464px;

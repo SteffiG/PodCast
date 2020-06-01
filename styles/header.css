@@ -81,7 +81,7 @@
   transition: left .5s ease-in-out;
 }
 
-.menuInner_list, .menuInner_lis1, .menuInner_list4 {
+.menuInner_list, .menuInner_list4 {
   margin: 0px 0 24px 16px;
   font-size: 16px;
 }

@@ -83,7 +83,7 @@
   transition: left .5s ease-in-out;
 }
 
-.menuInner_list, .menuInner_lis1, .menuInner_list4 {
+.menuInner_list, .menuInner_list4 {
   margin: 0px 0 24px 16px;
   font-size: 16px;
 }
@@ -159,6 +159,7 @@
   margin: 0;
   font-size: 14px;
   color: #060A24;
+  font-weight: 300;
   line-height: 22px;
   margin-bottom: 49px;
 }
@@ -275,6 +276,7 @@
 .we_div .we_paragraph {
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
+  font-weight: 300;
   line-height: 22px;
   margin: 0;
 }
@@ -416,7 +418,7 @@
 
 .author_name {
   font-family: "IBM Plex Mono", monospace;
-  font-weight: 400;
+  font-weight: 300;
   margin: 24px 0 16px;
   font-size: 14px;
   color: #060A24;
@@ -473,18 +475,19 @@
     background-color: white;
     font-family: "IBM Plex Mono", monospace;
     display: flex;
-    margin: 26px 100px 26px 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 26px 0 0 0;
   }
-  .menuInner_list1, .menuInner_list {
+  .menuInner_list {
     margin: 0 48px 0 0;
     display: inline;
   }
   .menuInner_list4 {
-    margin: 0;
+    margin: 0 100px 0 0;
     display: inline;
   }
   .menuInner_link {
+    line-height: 28px;
     color: #060A24;
   }
   .menuInner_link:hover {
@@ -520,6 +523,7 @@
     display: block;
     font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
+    font-weight: 300;
     color: #060A24;
     line-height: 24px;
     margin: 0;
@@ -704,18 +708,19 @@
     background-color: white;
     font-family: "IBM Plex Mono", monospace;
     display: flex;
-    margin: 26px 100px 26px 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 26px 0 0 0;
   }
-  .menuInner_list1, .menuInner_list {
+  .menuInner_list {
     margin: 0 48px 0 0;
     display: inline;
   }
   .menuInner_list4 {
-    margin: 0;
+    margin: 0 100px 0 0;
     display: inline;
   }
   .menuInner_link {
+    line-height: 28px;
     color: #060A24;
   }
   .menuInner_link:hover {
@@ -800,18 +805,19 @@
     background-color: white;
     font-family: "IBM Plex Mono", monospace;
     display: flex;
-    margin: 26px 100px 26px 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 26px 0 0 0;
   }
-  .menuInner_list1, .menuInner_list {
+  .menuInner_list {
     margin: 0 48px 0 0;
     display: inline;
   }
   .menuInner_list4 {
-    margin: 0;
+    margin: 0 100px 0 0;
     display: inline;
   }
   .menuInner_link {
+    line-height: 28px;
     color: #060A24;
   }
   .menuInner_link:hover {
@@ -882,9 +888,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  .we .telephone {
-    margin: 0;
   }
   .we_div {
     width: 464px;
